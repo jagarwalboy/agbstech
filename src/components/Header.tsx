@@ -2,7 +2,7 @@ import React from 'react';
 import { Search } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
-import agbLogo from "@/assets/agb-logo.png";
+import agbLogo from "../assets/agb-logo.png";
 
 export function Header() {
   return (
@@ -11,7 +11,12 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <img src={agbLogo} alt="AGB STECH" className="h-12 w-auto dark:invert" />
+            <img 
+              src={agbLogo} 
+              alt="AGB STECH" 
+              className="h-14 w-auto object-contain dark:brightness-200" 
+              style={{ maxWidth: '180px' }}
+            />
             <div className="flex flex-col">
               <span className="text-lg font-bold text-primary">AGB STECH</span>
               <span className="text-xs text-muted-foreground">All Memory Product Solutions</span>

@@ -11,7 +11,7 @@ const products = [
       "TYPE-C 3.1 Port and M.2 NVMe PCIe 2230 interface",
       "Write speed up to 2000MB/s, read speed up to 1000MB/s"
     ],
-    price: "¥ 0.00"
+    price: "₹ Contact for Price"
   },
   {
     id: "UL-EXSSD-22",
@@ -22,7 +22,7 @@ const products = [
       "TYPE-C 3.1 Port and M.2 NVMe PCIe interface",
       "Write speed up to 1800MB/s, read speed up to 1400MB/s"
     ],
-    price: "¥ 0.00"
+    price: "₹ Contact for Price"
   },
   {
     id: "UL-EXSSD-21",
@@ -33,7 +33,7 @@ const products = [
       "TYPE-C 3.1 Port and M.2 NVMe PCIe interface",
       "Write speed up to 1800MB/s, read speed up to 1400MB/s"
     ],
-    price: "¥ 0.00"
+    price: "₹ Contact for Price"
   }
 ];
 
