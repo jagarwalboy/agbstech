@@ -2,7 +2,6 @@ import React from 'react';
 import { Search } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
-import agbLogo from "../assets/agb-logo.png";
 
 export function Header() {
   return (
@@ -12,7 +11,7 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <img 
-              src={agbLogo} 
+              src="/agb-logo.png" 
               alt="AGB STECH" 
               className="h-14 w-auto object-contain dark:brightness-200" 
               style={{ maxWidth: '180px' }}

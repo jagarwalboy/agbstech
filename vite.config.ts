@@ -22,6 +22,7 @@ export default defineConfig(({ mode }) => ({
     modulePreload: {
       polyfill: false
     },
+    assetsInlineLimit: 0,
     rollupOptions: {
       output: {
         manualChunks: {
