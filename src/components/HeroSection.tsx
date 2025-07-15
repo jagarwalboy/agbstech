@@ -1,15 +1,22 @@
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import heroBackground from "@/assets/hero-bg.jpg";
 
 export function HeroSection() {
   return (
     <section className="relative h-[600px] overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBackground})` }}
-      >
+      {/* Background Video with Overlay */}
+      <div className="absolute inset-0">
+        <video
+          className="w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/placeholder.svg"
+        >
+          <source src="/agb stech.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20" />
       </div>
 
