@@ -16,20 +16,29 @@ export default defineConfig(({ mode }) => ({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-    },
+    }
   },
   build: {
+    modulePreload: {
+      polyfill: false
+    },
     rollupOptions: {
-      external: [],
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom'],
+          'ui-vendor': [
+            '@radix-ui/react-alert-dialog',
+            '@radix-ui/react-avatar',
+            '@radix-ui/react-dialog',
+            '@radix-ui/react-dropdown-menu'
+          ]
+        }
+      }
     },
-    commonjsOptions: {
-      include: [/node_modules/],
-    },
-    target: 'esnext',
+    target: ['es2020', 'edge88', 'firefox78', 'chrome87', 'safari14'],
     outDir: 'dist',
-  },
-  optimizeDeps: {
-    include: ['react', 'react-dom'],
-    exclude: [],
+    assetsDir: 'assets',
+    sourcemap: false,
+    minify: 'esbuild'
   }
 }));
